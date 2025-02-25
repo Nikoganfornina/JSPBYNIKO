@@ -1,0 +1,157 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #a8d5ba; /* Fondo verde suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    height: 100vh;
+    text-align: center;
+    color: #4f4f4f; /* Gris oscuro para texto */
+}
+
+/* Eliminar los puntos en las listas */
+ul, ol {
+    list-style-type: none; /* Elimina los puntos */
+    padding-left: 0; /* Elimina el espacio al lado de la lista */
+    text-align: left; /* Alinea el contenido de la lista a la izquierda */
+    margin-left: 20px; /* Añade un margen para que no esté pegado al borde */
+}
+
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    max-width: 900px; /* Máximo ancho para que no se extienda demasiado */
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.95); /* Fondo blanco suave para los contenedores */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.03); /* Efecto de hover más suave */
+}
+
+/* Títulos */
+h2, h3 {
+    color: #333; /* Gris oscuro */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Estilos de los enlaces */
+a {
+    text-decoration: none;
+    color: #6b8e23; /* Verde oliva para los enlaces */
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    color: #556b2f; /* Verde más oscuro */
+    transform: scale(1.05); /* Efecto de hover suave */
+}
+
+/* Botones */
+button, input[type="submit"] {
+    background: linear-gradient(135deg, #708090, #6b6b6b); /* Gradiente gris */
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px; /* Tamaño más grande */
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover, input[type="submit"]:hover {
+    background: linear-gradient(135deg, #6b6b6b, #555); /* Colores de hover más oscuros */
+    transform: scale(1.05);
+}
+
+/* Formularios */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrado de los elementos dentro del formulario */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #666; /* Gris intermedio para los labels */
+    font-size: 1.1em; /* Un poco más grande */
+}
+
+input[type="text"], input[type="password"], input[type="number"], select {
+    width: 80%;
+    max-width: 400px; /* Maxima anchura del campo */
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-size: 1em; /* Tamaño de letra adecuado */
+}
+
+input:focus {
+    border-color: #6b8e23; /* Verde suave para el borde al hacer foco */
+    box-shadow: 0 0 8px rgba(107, 142, 35, 0.5); /* Verde de foco */
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: linear-gradient(135deg, #696969, #808080); /* Gris oscuro en los encabezados */
+    color: white;
+    font-size: 1.2em; /* Títulos más grandes */
+}
+
+td {
+    background-color: #f4f4f4; /* Gris muy claro */
+    color: #333;
+}
+
+/* Botones de navegación */
+.nav-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #708090, #6b6b6b); /* Gris para la navegación */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-button:hover {
+    background: linear-gradient(135deg, #6b6b6b, #555);
+    transform: scale(1.05);
+}
